@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>وليد قاسم | مصمم ومحلل بيانات</title>
+    <meta name="theme-color" content="#07070c">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="prog"></div>
+    <div id="loader"><b>W/D</b></div>
+
+    <header id="hdr">
+        <div class="container nav">
+            <a href="#home" class="logo"><i>W</i><span>Waleed Kassim</span></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" class="on" data-ar="الرئيسية" data-en="Home"></a></li>
+                    <li><a href="#about" data-ar="نبذة" data-en="About"></a></li>
+                    <li><a href="#lab" data-ar="مختبر البيانات" data-en="Data Lab"></a></li>
+                    <li><a href="#gallery" data-ar="التصاميم" data-en="Designs"></a></li>
+                    <li><a href="#palette" data-ar="الألوان" data-en="Palette"></a></li>
+                    <li><a href="#process" data-ar="المنهج" data-en="Process"></a></li>
+                    <li><a href="#cases" data-ar="أعمال" data-en="Cases"></a></li>
+                    <li><a href="#contact" data-ar="تواصل" data-en="Contact"></a></li>
+                </ul>
+            </nav>
+            <div class="tools"><button class="ib" id="lang">EN</button><button class="ib" id="burger">☰</button></div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home" style="padding:0">
+        <div class="layer l-data">
+            <img src="img/data.jpg" class="hero-photo" alt="Data Analysis Workspace">
+            <canvas id="hc"></canvas>
+            <div class="in r">
+                <span class="tag">DATA ANALYST</span>
+                <h1>DATA</h1>
+                <p data-ar="أحوّل الأرقام الخام إلى قصص واضحة وقرارات ذكية بلوحات تحكم دقيقة."
+                    data-en="I turn raw numbers into clear stories and smart decisions with precise dashboards."></p>
+                <a href="#lab" class="btn lime" data-ar="مختبر البيانات ←" data-en="Data Lab →"></a>
+            </div>
+        </div>
+        <div class="layer l-design">
+            <img src="img/design.jpg" class="hero-photo" alt="Design Workspace">
+            <div class="shape sh1"></div>
+            <div class="shape sh2"></div>
+            <div class="shape sh3"></div>
+            <div class="in l">
+                <span class="tag">VISUAL DESIGNER</span>
+                <h1>DESIGN</h1>
+                <p data-ar="أصنع هويات وواجهات وتصاميم تلفت الانتباه وتبقى في الذاكرة."
+                    data-en="I craft identities, interfaces and visuals that grab attention and stay memorable."></p>
+                <a href="#gallery" class="btn dark" data-ar="معرض التصاميم ←" data-en="Design Gallery →"></a>
+            </div>
+        </div>
+        <div class="handle">
+            <div class="knob" id="knob" tabindex="0" role="slider" aria-label="split">⇆</div>
+        </div>
+        <div class="hint" data-ar="اسحب الفاصل لتكتشف العالمين ⇆" data-en="Drag the divider to explore both worlds ⇆">
+        </div>
+    </section>
+
+    <div class="marq">
+        <div class="mt" id="mt"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="sh rv"><small>01 — ABOUT</small>
+                <h2 data-ar="عقلان، منهج واحد" data-en="Two minds, one workflow"></h2>
+                <p data-ar="أجمع بين حسّ المصمم ودقّة المحلل: جمال يخدم الفكرة، وأرقام تثبت القرار."
+                    data-en="I blend a designer's eye with an analyst's precision: beauty that serves the idea, numbers that prove the decision.">
+                </p>
+            </div>
+            <div class="duo">
+                <div class="side d rv">
+                    <div class="bgn">Aa</div>
+                    <h3 data-ar="المصمم" data-en="The Designer"></h3>
+                    <p data-ar="هويات بصرية، بوسترات، محتوى سوشال، وواجهات تطبيقات بتفاصيل مدروسة وألوان جريئة."
+                        data-en="Brand identities, posters, social content and app interfaces with thoughtful details and bold color.">
+                    </p>
+                    <div class="chips">
+                        <span>Figma</span><span>Photoshop</span><span>Illustrator</span><span>Canva</span>
+                    </div>
+                </div>
+                <div class="side a rv">
+                    <div class="bgn">%</div>
+                    <h3 data-ar="محلل البيانات" data-en="The Data Analyst"></h3>
+                    <p data-ar="تنظيف البيانات وتحليلها وبناء لوحات تحكم تكشف الاتجاهات وتدعم القرار."
+                        data-en="Cleaning and analyzing data and building dashboards that reveal trends and support decisions.">
+                    </p>
+                    <div class="chips"><span>Excel</span><span>SQL</span><span>Python</span><span>Power
+                            BI</span><span>Tableau</span></div>
+                </div>
+            </div>
+            <div class="nums rv">
+                <div class="num"><b data-c="9">0</b><span data-ar="أداة احترافية" data-en="pro tools"></span></div>
+                <div class="num"><b data-c="12">0</b><span data-ar="تصميم في المعرض" data-en="gallery designs"></span>
+                </div>
+                <div class="num"><b data-c="100" data-s="%">0</b><span data-ar="شغف وتعلّم"
+                        data-en="passion & learning"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA LAB -->
+    <section id="lab" style="background:var(--bg2)">
+        <div class="container">
+            <div class="sh"><small>02 — DATA LAB</small>
+                <h2 data-ar="مختبر البيانات التفاعلي" data-en="Interactive Data Lab"></h2>
+                <p data-ar="لوحة تحكم حيّة بيانات تجريبية: غيّر المؤشر أو الفترة وشاهد كل شيء يتحدّث لحظياً."
+                    data-en="A live dashboard with sample data: change the metric or range and watch everything update instantly.">
+                </p>
+            </div>
+            <div class="ctl">
+                <div class="pills" id="mt2"></div>
+                <div class="pills" id="rg"></div>
+            </div>
+            <div class="kp" id="kp"></div>
+            <div class="r2">
+                <div class="panel">
+                    <h4><span id="lt"></span><small id="lu"></small></h4>
+                    <div class="cw"><canvas id="lc"></canvas>
+                        <div id="tip"></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h4><span data-ar="المبيعات حسب الخدمة" data-en="Sales by service"></span></h4>
+                    <div id="bars"></div>
+                </div>
+            </div>
+            <div class="r3">
+                <div class="panel">
+                    <h4><span data-ar="مصادر الزيارات" data-en="Traffic sources"></span></h4>
+                    <div class="dn-wrap"><svg viewBox="0 0 200 200" id="dn"></svg>
+                        <div class="lg" id="lg"></div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h4><span data-ar="خريطة النشاط الحرارية" data-en="Activity heatmap"></span><small
+                            data-ar="الأيام × الساعات" data-en="days × hours"></small></h4>
+                    <div class="heat" id="heat"></div>
+                </div>
+            </div>
+            <div class="ins" id="ins"></div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="container">
+            <div class="sh"><small>03 — DESIGNS</small>
+                <h2 data-ar="معرض التصاميم" data-en="Design Gallery"></h2>
+                <p data-ar="تصاميم مولّدة بالكود (SVG): اضغط على أي عمل لعرضه بحجم أكبر."
+                    data-en="Designs generated in code (SVG): tap any work to view it larger."></p>
+            </div>
+            <div class="pills" id="gf"></div>
+            <div class="gg" id="gg"></div>
+        </div>
+    </section>
+    <div class="modal" id="md">
+        <div class="box"><button class="x" id="mx">✕</button>
+            <div class="mv"><svg id="msv" viewBox="0 0 400 500"></svg></div>
+            <div class="mi"><small id="mc"></small>
+                <h3 id="mti"></h3>
+                <p id="mds"></p>
+                <div class="tags" id="mtg"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PALETTE -->
+    <section id="palette" style="background:var(--bg2)">
+        <div class="container">
+            <div class="sh"><small>04 — COLOR LAB</small>
+                <h2 data-ar="مولّد لوحات الألوان" data-en="Color Palette Generator"></h2>
+                <p data-ar="ولّد لوحة متناسقة بضغطة، واضغط على أي لون لنسخه، وشاهد المعاينة الحيّة."
+                    data-en="Generate a harmonious palette in one click, tap any color to copy it, and see the live preview.">
+                </p>
+            </div>
+            <div class="cta" style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn lime" id="gen"
+                    data-ar="🎨 ولّد لوحة جديدة" data-en="🎨 Generate new palette"></button><button class="btn" id="cpc"
+                    data-ar="نسخ CSS" data-en="Copy CSS"></button></div>
+            <div class="pal" id="pal"></div>
+            <div class="pv" id="pv">
+                <div class="pc" id="pvc"></div>
+                <div>
+                    <h4 id="pvh"></h4>
+                    <p id="pvp"></p><span class="pb" id="pvb"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+        <div class="container">
+            <div class="sh"><small>05 — PROCESS</small>
+                <h2 data-ar="كيف أعمل" data-en="How I Work"></h2>
+                <p data-ar="خطوتان متوازيتان: الإبداع والتحليل يسيران معاً في كل مشروع."
+                    data-en="Two parallel tracks: creativity and analysis move together in every project."></p>
+            </div>
+            <div class="lbl"><span data-ar="التصميم" data-en="DESIGN"></span><span></span><span data-ar="البيانات"
+                    data-en="DATA"></span></div>
+            <div id="prc"></div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section style="background:var(--bg2)">
+        <div class="container">
+            <div class="sh"><small>06 — SKILLS</small>
+                <h2 data-ar="المهارات" data-en="Skills"></h2>
+            </div>
+            <div class="sk" id="sk"></div>
+        </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases">
+        <div class="container">
+            <div class="sh"><small>07 — CASES</small>
+                <h2 data-ar="نماذج أعمال" data-en="Case Studies"></h2>
+                <p data-ar="نماذج توضيحية، عدّلها لاحقاً بأعمالك الحقيقية."
+                    data-en="Sample cases — replace later with your real work."></p>
+            </div>
+            <div class="cs" id="cs"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="background:var(--bg2)">
+        <div class="container">
+            <div class="cbig rv" data-ar="لنصنع شيئاً مميزاً" data-en="Let's make something great"></div>
+            <div class="ct rv">
+                <div>
+                    <a class="ci" href="tel:+966543676979"><i>📱</i>
+                        <div><small data-ar="الجوال" data-en="Mobile"></small><b>0543676979</b></div>
+                    </a>
+                    <a class="ci" href="https://wa.me/966543676979" target="_blank" rel="noopener"><i>💬</i>
+                        <div><small>WhatsApp</small><b>+966 54 367 6979</b></div>
+                    </a>
+                    <a class="ci" href="mailto:waleedkassim19833@gmail.com"><i>✉</i>
+                        <div><small data-ar="البريد" data-en="Email"></small><b>waleedkassim19833@gmail.com</b></div>
+                    </a>
+                    <a class="ci" href="https://github.com/waleedkassim19833-bot" target="_blank"
+                        rel="noopener"><i>🐙</i>
+                        <div><small>GitHub</small><b>waleedkassim19833-bot</b></div>
+                    </a>
+                </div>
+                <form id="form">
+                    <input id="fn" required data-ph-ar="الاسم" data-ph-en="Your name">
+                    <input id="fe" type="email" required data-ph-ar="بريدك" data-ph-en="Your email">
+                    <textarea id="fm" required data-ph-ar="اكتب رسالتك..."
+                        data-ph-en="Write your message..."></textarea>
+                    <button class="btn lime" style="width:100%" type="submit" data-ar="إرسال ✉"
+                        data-en="Send ✉"></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">© <span id="yr"></span> <span data-ar="وليد محمد قاسم — مصمم ومحلل بيانات"
+                data-en="Waleed Mohamed Kassim — Designer & Data Analyst"></span></div>
+    </footer>
+    <div id="toast"></div><button id="top">↑</button>
+
+    <script>
+        const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+        const CFG = { email: "waleedkassim19833@gmail.com" };
+        let lang = "ar"; const T = (a, e) => lang === "ar" ? a : e;
+        const fmt = n => n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "K" : Math.round(n) + "";
+        const num = (n, d = 0) => Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+        function toast(t) { const e = $("#toast"); e.textContent = t; e.classList.add("show"); clearTimeout(e._t); e._t = setTimeout(() => e.classList.remove("show"), 1800) }
+
+        /* ===== DATA ===== */
+        const MO = { ar: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"], en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] };
+        const DATA = { rev: [42, 48, 45, 56, 61, 58, 67, 72, 69, 81, 92, 104], ord: [310, 342, 330, 401, 436, 420, 478, 512, 495, 574, 640, 722], vis: [8200, 9100, 8800, 10400, 11200, 10900, 12300, 13100, 12800, 14600, 16200, 18400] };
+        const SRV = [["تصميم هويات", "Brand identity", 88], ["لوحات تحكم", "Dashboards", 74], ["واجهات UI/UX", "UI/UX", 63], ["تحليل بيانات", "Data analysis", 52], ["محتوى سوشال", "Social content", 41]];
+        const SRC = [["مباشر", "Direct", 34, "#c6ff3d"], ["بحث", "Search", 28, "#22d3ee"], ["سوشال", "Social", 22, "#ff4d8d"], ["إحالات", "Referral", 16, "#7c3aed"]];
+        let metric = "rev", range = 12, LP = 0, LH = -1, PTS = [], started = false;
+        const sl = a => a.slice(12 - range);
+        const MET = { rev: ["الإيرادات", "Revenue", "ألف ر.س", "K SAR"], ord: ["الطلبات", "Orders", "طلب", "orders"], vis: ["الزيارات", "Visitors", "زائر", "visitors"] };
+
+        /* ===== LANGUAGE ===== */
+        function setLang(l) {
+            lang = l; const d = document.documentElement; d.lang = l; d.dir = l === "ar" ? "rtl" : "ltr";
+            $$("[data-ar]").forEach(e => e.textContent = e.dataset[l]);
+            $$("[data-ph-ar]").forEach(e => e.placeholder = l === "ar" ? e.dataset.phAr : e.dataset.phEn);
+            $("#lang").textContent = l === "ar" ? "EN" : "عربي";
+            document.title = l === "ar" ? "وليد قاسم | مصمم ومحلل بيانات" : "Waleed Kassim | Designer & Data Analyst";
+            renderAll(); try { localStorage.setItem("lang1", l) } catch (e) { }
+        }
+        $("#lang").onclick = () => setLang(lang === "ar" ? "en" : "ar");
+
+        /* ===== MARQUEE ===== */
+        const TL = ["Figma", "Photoshop", "Illustrator", "Canva", "Excel", "SQL", "Python", "Power BI", "Tableau", "Dashboards", "Branding", "UI/UX"];
+        $("#mt").innerHTML = [...TL, ...TL].map(x => `<span>${x}</span>`).join("");
+
+        /* ===== HERO SPLIT ===== */
+        const hero = $("#home"); let hx = 50, dragging = false, demo = true, tt = 0;
+        function setX(v) { hx = Math.max(8, Math.min(92, v)); hero.style.setProperty("--x", hx + "%") }
+        (function dl() { if (demo) { tt += .011; setX(50 + Math.sin(tt) * 24) } requestAnimationFrame(dl) })();
+        function mv(e) { const r = hero.getBoundingClientRect(); setX((e.clientX - r.left) / r.width * 100) }
+        hero.addEventListener("pointerdown", e => { if (e.target.closest("a,button")) return; dragging = true; demo = false; mv(e) });
+        addEventListener("pointermove", e => { if (dragging) mv(e) });
+        addEventListener("pointerup", () => dragging = false); addEventListener("pointercancel", () => dragging = false);
+        $("#knob").addEventListener("keydown", e => { demo = false; if (e.key === "ArrowLeft") setX(hx - 4); if (e.key === "ArrowRight") setX(hx + 4) });
+        (function () {
+            const c = $("#hc"), x = c.getContext("2d"); let w, h, t = 0;
+            function rs() { const d = Math.min(devicePixelRatio || 1, 2); w = c.clientWidth; h = c.clientHeight; c.width = w * d; c.height = h * d; x.setTransform(d, 0, 0, d, 0, 0) }
+            rs(); addEventListener("resize", rs);
+            (function f() {
+                requestAnimationFrame(f); if (scrollY > innerHeight) return; t += .014; x.clearRect(0, 0, w, h);
+                const n = Math.max(14, Math.floor(w / 30)), bw = w / n;
+                for (let i = 0; i < n; i++) {
+                    const v = (Math.sin(i * .38 + t * 2) + Math.sin(i * .12 - t) + 2) / 4, bh = v * h * .5;
+                    const g = x.createLinearGradient(0, h - bh, 0, h); g.addColorStop(0, "rgba(34,211,238,.35)"); g.addColorStop(1, "rgba(34,211,238,0)");
+                    x.fillStyle = g; x.fillRect(i * bw + 3, h - bh, bw - 6, bh)
+                }
+                x.beginPath(); for (let i = 0; i <= n; i++) { const y = h * .42 - Math.sin(i * .3 + t * 2.2) * h * .09 - Math.sin(i * .1 + t) * h * .07; i ? x.lineTo(i * bw, y) : x.moveTo(0, y) }
+                x.strokeStyle = "rgba(198,255,61,.9)"; x.lineWidth = 2.5; x.shadowColor = "#c6ff3d"; x.shadowBlur = 14; x.stroke(); x.shadowBlur = 0;
+                x.strokeStyle = "rgba(255,255,255,.05)"; x.lineWidth = 1; for (let i = 1; i < 6; i++) { x.beginPath(); x.moveTo(0, h * i / 6); x.lineTo(w, h * i / 6); x.stroke() }
+            })()
+        })();
+
+        /* ===== DASHBOARD ===== */
+        function countTo(el, v, dec = 0, dur = 1100) { const t0 = performance.now(); (function f(t) { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); el.textContent = num(v * e, dec); if (p < 1) requestAnimationFrame(f) })(t0) }
+        function renderDash() {
+            $("#mt2").innerHTML = Object.keys(MET).map(k => `<button class="pill ${k === metric ? "on" : ""}" data-m="${k}">${T(MET[k][0], MET[k][1])}</button>`).join("");
+            $("#rg").innerHTML = [6, 12].map(n => `<button class="pill ${n === range ? "on" : ""}" data-r="${n}">${n} ${T("أشهر", "months")}</button>`).join("");
+            $$("#mt2 .pill").forEach(b => b.onclick = () => { metric = b.dataset.m; renderDash(); playLine() });
+            $$("#rg .pill").forEach(b => b.onclick = () => { range = +b.dataset.r; renderDash(); playLine() });
+            const R = sl(DATA.rev), O = sl(DATA.ord), V = sl(DATA.vis), sum = a => a.reduce((s, n) => s + n, 0), gr = a => (a[a.length - 1] / a[0] - 1) * 100;
+            const cv = O.map((o, i) => o / V[i] * 100), av = R.map((r, i) => r * 1000 / O[i]);
+            const K = [[T("الإيرادات", "Revenue"), sum(R), 0, "K " + T("ر.س", "SAR"), gr(R)], [T("الطلبات", "Orders"), sum(O), 0, "", gr(O)], [T("معدل التحويل", "Conversion"), sum(O) / sum(V) * 100, 2, "%", gr(cv)], [T("متوسط الطلب", "Avg. order"), sum(R) * 1000 / sum(O), 0, T(" ر.س", " SAR"), gr(av)]];
+            $("#kp").innerHTML = K.map((k, i) => `<div class="kpi"><small>${k[0]}</small><b><span id="kv${i}">0</span> <span style="font-size:1rem;color:var(--mut)">${k[3]}</span></b><span class="d ${k[4] >= 0 ? "up" : "dn"}">${k[4] >= 0 ? "▲" : "▼"} ${Math.abs(k[4]).toFixed(1)}%</span></div>`).join("");
+            K.forEach((k, i) => countTo($("#kv" + i), k[1], k[2]));
+            $("#lt").textContent = T(MET[metric][0] + " الشهرية", "Monthly " + MET[metric][1]); $("#lu").textContent = T(MET[metric][2], MET[metric][3]);
+            $("#bars").innerHTML = SRV.map(s => `<div class="bar"><div class="t"><span>${T(s[0], s[1])}</span><span>${s[2]}%</span></div><div class="tr"><div class="f" style="--w:${s[2]}%"></div></div></div>`).join("");
+            const C = 2 * Math.PI * 70; let off = 0;
+            $("#dn").innerHTML = SRC.map(s => { const len = C * s[2] / 100; const e = `<circle cx="100" cy="100" r="70" stroke="${s[3]}" stroke-dasharray="${len - 3} ${C - len + 3}" stroke-dashoffset="${-off}"/>`; off += len; return e }).join("");
+            $("#lg").innerHTML = SRC.map(s => `<div><i style="background:${s[3]}"></i>${T(s[0], s[1])} — ${s[2]}%</div>`).join("");
+            const days = T(["س", "ج", "خ", "أ", "ن", "ح", "ث"], ["Sa", "Fr", "Th", "We", "Tu", "Mo", "Su"]); let hh = "";
+            for (let r = 0; r < 7; r++) { hh += `<span>${days[r]}</span>`; for (let c = 0; c < 12; c++) { const v = (Math.sin(r * 1.7 + c * .9) + 1) / 2 * ((c > 2 && c < 9) ? 1 : .45); hh += `<div style="background:rgba(198,255,61,${(.08 + v * .8).toFixed(2)})"></div>` } }
+            $("#heat").innerHTML = hh;
+            const v = sl(DATA[metric]), lab = sl(MO[lang]), mi = v.indexOf(Math.max(...v));
+            $("#ins").textContent = T(`💡 أعلى شهر في ${MET[metric][0]} هو ${lab[mi]} بقيمة ${num(v[mi])}، والنمو من بداية الفترة ${gr(v).toFixed(1)}%.`, `💡 Peak ${MET[metric][1].toLowerCase()} month is ${lab[mi]} at ${num(v[mi])}, with ${gr(v).toFixed(1)}% growth since the start of the period.`);
+            drawLine();
+        }
+        function drawLine() {
+            const c = $("#lc"), r = c.getBoundingClientRect(); if (!r.width) return; const d = Math.min(devicePixelRatio || 1, 2);
+            c.width = r.width * d; c.height = r.height * d; const x = c.getContext("2d"); x.setTransform(d, 0, 0, d, 0, 0);
+            const w = r.width, h = r.height, P = { l: 44, r: 14, t: 16, b: 30 }, iw = w - P.l - P.r, ih = h - P.t - P.b, v = sl(DATA[metric]), lab = sl(MO[lang]), mx = Math.max(...v) * 1.12;
+            x.clearRect(0, 0, w, h); x.font = "12px Tajawal, 'Space Grotesk'"; x.fillStyle = "#7a7d98"; x.strokeStyle = "rgba(255,255,255,.06)"; x.textAlign = "right";
+            for (let i = 0; i <= 4; i++) { const y = P.t + ih * i / 4; x.beginPath(); x.moveTo(P.l, y); x.lineTo(w - P.r, y); x.stroke(); x.fillText(fmt(mx * (1 - i / 4)), P.l - 8, y + 4) }
+            PTS = v.map((n, i) => [P.l + iw * i / (v.length - 1), P.t + ih * (1 - n / mx)]); x.textAlign = "center";
+            lab.forEach((l, i) => { if (v.length <= 6 || i % 2 === 0) x.fillText(l, PTS[i][0], h - 8) });
+            const path = () => { x.beginPath(); x.moveTo(PTS[0][0], PTS[0][1]); for (let i = 1; i < PTS.length; i++) { const a = PTS[i - 1], b = PTS[i], cx = (a[0] + b[0]) / 2; x.bezierCurveTo(cx, a[1], cx, b[1], b[0], b[1]) } };
+            x.save(); x.beginPath(); x.rect(0, 0, P.l + iw * LP + 1, h); x.clip();
+            path(); x.lineTo(PTS[PTS.length - 1][0], P.t + ih); x.lineTo(PTS[0][0], P.t + ih); x.closePath();
+            const g = x.createLinearGradient(0, P.t, 0, P.t + ih); g.addColorStop(0, "rgba(198,255,61,.35)"); g.addColorStop(1, "rgba(198,255,61,0)"); x.fillStyle = g; x.fill();
+            path(); const lg = x.createLinearGradient(P.l, 0, w, 0); lg.addColorStop(0, "#22d3ee"); lg.addColorStop(1, "#c6ff3d"); x.strokeStyle = lg; x.lineWidth = 3.5; x.lineJoin = "round"; x.shadowColor = "#c6ff3d"; x.shadowBlur = 14; x.stroke(); x.shadowBlur = 0; x.restore();
+            if (LP >= 1) PTS.forEach((p, i) => { x.beginPath(); x.arc(p[0], p[1], i === LH ? 7 : 3.5, 0, 7); x.fillStyle = i === LH ? "#fff" : "#c6ff3d"; x.fill() });
+            if (LH >= 0 && LP >= 1) {
+                x.strokeStyle = "rgba(255,255,255,.25)"; x.beginPath(); x.moveTo(PTS[LH][0], P.t); x.lineTo(PTS[LH][0], P.t + ih); x.stroke();
+                const t = $("#tip"); t.style.left = PTS[LH][0] + "px"; t.style.top = PTS[LH][1] + "px"; t.textContent = lab[LH] + ": " + num(v[LH]); t.style.opacity = 1
+            }
+        }
+        function playLine() { LP = 0; (function f() { LP = Math.min(1, LP + .04); drawLine(); if (LP < 1) requestAnimationFrame(f) })() }
+        $("#lc").addEventListener("pointermove", e => { if (!PTS.length) return; const r = $("#lc").getBoundingClientRect(), px = e.clientX - r.left; let b = 0, bd = 1e9; PTS.forEach((p, i) => { const dd = Math.abs(p[0] - px); if (dd < bd) { bd = dd; b = i } }); LH = b; drawLine() });
+        $("#lc").addEventListener("pointerleave", () => { LH = -1; $("#tip").style.opacity = 0; drawLine() });
+        addEventListener("resize", drawLine);
+        function startLab() { if (started) return; started = true; renderDash(); playLine() }
+
+        /* ===== GALLERY ===== */
+        const A = (k, cat, n, ar, en, c) => ({ k, cat, n, t: [ar, en], c });
+        const ART = [
+            A("logo", "brand", "LUMA", "هوية قهوة LUMA", "LUMA Coffee Identity", ["#ff4d8d", "#7c3aed", "#c6ff3d", "#0b0b10"]),
+            A("poster", "poster", "BOLD", "بوستر BOLD", "BOLD Poster", ["#c6ff3d", "#0b0b10", "#7c3aed", "#ffffff"]),
+            A("ui", "ui", "FINPAY", "تطبيق محفظة", "Wallet App", ["#22d3ee", "#7c3aed", "#ff4d8d", "#0b0b10"]),
+            A("social", "social", "CREATE", "حملة CREATE", "CREATE Campaign", ["#7c3aed", "#ff4d8d", "#c6ff3d", "#ffffff"]),
+            A("logo", "brand", "NOVA", "شعار NOVA", "NOVA Logo", ["#22d3ee", "#0b0b10", "#ff4d8d", "#f6f1ff"]),
+            A("poster", "poster", "WAVE", "بوستر موسيقي", "Music Poster", ["#ff4d8d", "#ffd166", "#0b0b10", "#ffffff"]),
+            A("ui", "ui", "HEALTHY", "تطبيق صحي", "Health App", ["#c6ff3d", "#22d3ee", "#7c3aed", "#0b0b10"]),
+            A("social", "social", "SALE", "إعلان تخفيضات", "Sale Ad", ["#ff4d8d", "#ffd166", "#0b0b10", "#ffffff"]),
+            A("logo", "brand", "ORBIT", "هوية ORBIT", "ORBIT Identity", ["#7c3aed", "#22d3ee", "#c6ff3d", "#08111f"]),
+            A("poster", "poster", "ART", "معرض فني", "Art Expo", ["#22d3ee", "#ff4d8d", "#c6ff3d", "#0b0b10"]),
+            A("ui", "ui", "TRAVEL", "تطبيق سفر", "Travel App", ["#ff4d8d", "#ffd166", "#7c3aed", "#0b0b10"]),
+            A("social", "social", "DATA", "قصة بيانات", "Data Story", ["#0b0b10", "#22d3ee", "#c6ff3d", "#ffffff"])];
+        const CATN = { brand: ["هوية بصرية", "Branding"], poster: ["بوستر", "Poster"], ui: ["واجهة", "UI/UX"], social: ["سوشال", "Social"] };
+        const DESC = { brand: ["هوية متكاملة: شعار ولوحة ألوان وتطبيقات على العبوات والمطبوعات.", "Full identity: logo, palette and applications on packaging and print."], poster: ["تكوين طباعي جريء يعتمد على التباين والخطوط الضخمة.", "A bold typographic composition built on contrast and huge letterforms."], ui: ["واجهة تطبيق نظيفة مع تدرّج هرمي واضح وتجربة مستخدم سلسة.", "A clean app interface with clear hierarchy and a smooth user experience."], social: ["تصميم سوشال ميديا لافت مصمم لإيقاف التمرير وزيادة التفاعل.", "An eye-catching social design built to stop the scroll and boost engagement."] };
+        const TOOLS = { brand: ["Illustrator", "Photoshop"], poster: ["Photoshop", "Illustrator"], ui: ["Figma", "Prototyping"], social: ["Canva", "Photoshop"] };
+        function art(a, i, s) {
+            const [p, q, r, b] = a.c, id = "g" + i + s; let o = `<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${p}"/><stop offset="1" stop-color="${q}"/></linearGradient></defs>`;
+            if (a.k === "logo") o += `<rect width="400" height="500" fill="${b}"/><circle cx="200" cy="200" r="120" fill="${p}"/><circle cx="238" cy="178" r="84" fill="${q}" opacity=".92"/><rect x="140" y="236" width="120" height="120" rx="32" fill="${r}" transform="rotate(${15 + i * 6} 200 296)"/><text x="200" y="440" text-anchor="middle" font-family="Syne" font-weight="800" font-size="38" fill="#fff" letter-spacing="6">${a.n}</text>`;
+            if (a.k === "poster") o += `<rect width="400" height="500" fill="${p}"/><text x="-30" y="360" font-family="Syne" font-weight="800" font-size="340" fill="none" stroke="${q}" stroke-width="3">${a.n[0]}</text><circle cx="300" cy="120" r="70" fill="${r}"/><rect x="40" y="392" width="320" height="10" fill="${q}"/><text x="40" y="450" font-family="Syne" font-weight="800" font-size="44" fill="${b === q ? "#fff" : q}">${a.n}</text>`;
+            if (a.k === "ui") o += `<rect width="400" height="500" fill="url(#${id})"/><rect x="100" y="36" width="200" height="430" rx="32" fill="#0b0b10" stroke="#fff" stroke-opacity=".5" stroke-width="3"/><rect x="116" y="64" width="168" height="84" rx="18" fill="${p}"/><circle cx="148" cy="106" r="20" fill="${b}" opacity=".35"/><rect x="116" y="164" width="100" height="12" rx="6" fill="#fff" opacity=".85"/><rect x="116" y="186" width="70" height="10" rx="5" fill="#fff" opacity=".3"/>${[0, 1, 2, 3, 4].map(k => `<rect x="${122 + k * 32}" y="${290 - [40, 70, 50, 95, 65][k]}" width="22" height="${[40, 70, 50, 95, 65][k]}" rx="6" fill="${[q, r, p, r, q][k]}"/>`).join("")}<rect x="116" y="314" width="168" height="44" rx="14" fill="#1b1b2b"/><rect x="116" y="368" width="168" height="44" rx="14" fill="#1b1b2b"/><circle cx="262" cy="336" r="10" fill="${r}"/><circle cx="262" cy="390" r="10" fill="${q}"/>`;
+            if (a.k === "social") o += `<rect width="400" height="500" fill="url(#${id})"/><circle cx="330" cy="90" r="64" fill="${r}"/><circle cx="60" cy="440" r="90" fill="#fff" opacity=".12"/><text x="36" y="250" font-family="Syne" font-weight="800" font-size="62" fill="${b}">${a.n}</text><text x="36" y="316" font-family="Syne" font-weight="800" font-size="62" fill="none" stroke="${b}" stroke-width="2">MORE.</text><rect x="36" y="350" width="120" height="8" rx="4" fill="${r}"/>`;
+            return o
+        }
+        let gf = "all";
+        function renderGallery() {
+            $("#gf").innerHTML = [["all", "الكل", "All"], ["brand", "هويات", "Branding"], ["poster", "بوسترات", "Posters"], ["ui", "واجهات", "UI/UX"], ["social", "سوشال", "Social"]].map(f => `<button class="pill ${gf === f[0] ? "on" : ""}" data-f="${f[0]}">${T(f[1], f[2])}</button>`).join("");
+            $$("#gf .pill").forEach(b => b.onclick = () => { gf = b.dataset.f; renderGallery() });
+            $("#gg").innerHTML = ART.map((a, i) => ({ a, i })).filter(o => gf === "all" || o.a.cat === gf).map(({ a, i }) => `<div class="work" data-i="${i}"><svg viewBox="0 0 400 500">${art(a, i, "")}</svg><div class="ov"><small>${T(CATN[a.cat][0], CATN[a.cat][1])}</small><b>${T(a.t[0], a.t[1])}</b></div></div>`).join("");
+            $$(".work").forEach(w => w.onclick = () => openWork(+w.dataset.i));
+        }
+        function openWork(i) { const a = ART[i]; $("#msv").innerHTML = art(a, i, "m"); $("#mc").textContent = T(CATN[a.cat][0], CATN[a.cat][1]); $("#mti").textContent = T(a.t[0], a.t[1]); $("#mds").textContent = T(DESC[a.cat][0], DESC[a.cat][1]); $("#mtg").innerHTML = TOOLS[a.cat].map(t => `<span>${t}</span>`).join(""); $("#md").classList.add("open") }
+        $("#mx").onclick = () => $("#md").classList.remove("open");
+        $("#md").onclick = e => { if (e.target.id === "md") $("#md").classList.remove("open") };
+        addEventListener("keydown", e => { if (e.key === "Escape") $("#md").classList.remove("open") });
+
+        /* ===== PALETTE ===== */
+        let PAL = [];
+        function hsl(h, s, l) { s /= 100; l /= 100; const k = n => (n + h / 30) % 12, a = s * Math.min(l, 1 - l), f = n => l - a * Math.max(-1, Math.min(k(n) - 3, Math.min(9 - k(n), 1))); return "#" + [f(0), f(8), f(4)].map(v => Math.round(v * 255).toString(16).padStart(2, "0")).join("") }
+        function lum(hx) { const n = parseInt(hx.slice(1), 16); return (.299 * (n >> 16) + .587 * (n >> 8 & 255) + .114 * (n & 255)) / 255 }
+        function genPal() { const h = Math.random() * 360; PAL = [hsl(h, 75, 55), hsl((h + 30) % 360, 80, 62), hsl((h + 180) % 360, 65, 50), hsl((h + 210) % 360, 45, 22), hsl(h, 35, 93)]; renderPal() }
+        function renderPal() {
+            $("#pal").innerHTML = PAL.map(c => `<button class="sw" data-c="${c}" style="background:${c};color:${lum(c) > .6 ? "#111" : "#fff"}">${c.toUpperCase()}</button>`).join("");
+            $$(".sw").forEach(b => b.onclick = () => cp(b.dataset.c));
+            const pv = $("#pv"); pv.style.background = PAL[4]; pv.style.color = PAL[3]; $("#pvc").style.background = `linear-gradient(135deg,${PAL[0]},${PAL[1]})`;
+            $("#pvh").textContent = T("هكذا تبدو ألوانك في تصميم حقيقي", "This is how your colors look in a real design"); $("#pvp").textContent = T("معاينة حيّة للبطاقة والزر والعناصر.", "Live preview of card, button and elements.");
+            const b = $("#pvb"); b.style.background = PAL[0]; b.style.color = lum(PAL[0]) > .6 ? "#111" : "#fff"; b.textContent = T("زر تجريبي", "Sample button")
+        }
+        function cp(t) { try { navigator.clipboard.writeText(t) } catch (e) { } toast(T("تم النسخ: ", "Copied: ") + t) }
+        $("#gen").onclick = genPal; $("#cpc").onclick = () => cp(":root{" + PAL.map((c, i) => `--c${i + 1}:${c}`).join(";") + "}");
+
+        /* ===== PROCESS / SKILLS / CASES ===== */
+        const PR = [[["بحث وفهم", "Research"], ["أفهم الجمهور والهدف قبل أي خط.", "Understand audience and goal before any line."], ["جمع البيانات", "Collect Data"], ["أجمع المصادر وأحدد الأسئلة الصحيحة.", "Gather sources and define the right questions."]],
+        [["أفكار وسكتشات", "Ideate"], ["أجرّب اتجاهات متعددة بسرعة.", "Quickly explore multiple directions."], ["تنظيف وتجهيز", "Clean & Prepare"], ["أنظّف البيانات وأتأكد من جودتها.", "Clean the data and verify its quality."]],
+        [["تصميم وتطوير", "Design"], ["أبني التصميم بتفاصيل وألوان مدروسة.", "Craft the design with considered details and color."], ["تحليل واستنتاج", "Analyze"], ["أكتشف الأنماط وأستخرج الاستنتاجات.", "Find patterns and extract insights."]],
+        [["تسليم وتحسين", "Deliver"], ["أسلّم الملفات وأحسّن بناءً على الملاحظات.", "Deliver files and refine from feedback."], ["عرض ولوحات", "Visualize"], ["أعرض النتائج بلوحات واضحة تدعم القرار.", "Present results in clear dashboards that drive decisions."]]];
+        const SKD = [["Figma", 90], ["Photoshop", 88], ["Illustrator", 85], ["Canva", 95]], SKA = [["Excel", 92], ["SQL", 80], ["Python", 78], ["Power BI", 85], ["Tableau", 70]];
+        const CS = [["12", "KPIs", "لوحة مبيعات", "Sales Dashboard", "لوحة Power BI تتابع المبيعات والأداء لحظياً.", "A Power BI dashboard tracking sales and performance live.", "#22d3ee"],
+        ["30+", "Assets", "هوية بصرية", "Brand Identity", "شعار وألوان وتطبيقات لعلامة ناشئة.", "Logo, colors and applications for an emerging brand.", "#ff4d8d"],
+        ["5K", "Records", "تحليل رضا العملاء", "Customer Satisfaction", "تحليل آلاف الاستبيانات بـ Python وSQL.", "Analysis of thousands of surveys using Python and SQL.", "#c6ff3d"],
+        ["24", "Screens", "واجهة تطبيق جوال", "Mobile App UI", "تصميم شاشات تطبيق كامل بنموذج تفاعلي.", "A full app screen set with an interactive prototype.", "#7c3aed"]];
+        function renderProcess() { $("#prc").innerHTML = PR.map((r, i) => `<div class="pr"><div class="pd"><h5>${T(r[0][0], r[0][1])}</h5><p>${T(r[1][0], r[1][1])}</p></div><div class="cn">0${i + 1}</div><div class="pa"><h5>${T(r[2][0], r[2][1])}</h5><p>${T(r[3][0], r[3][1])}</p></div></div>`).join("") }
+        function renderSkills() {
+            const L = (a, c) => a.map(s => `<div class="bar"><div class="t"><span>${s[0]}</span><span>${s[1]}%</span></div><div class="tr"><div class="f" style="--w:${s[1]}%"></div></div></div>`).join("");
+            $("#sk").innerHTML = `<div class="panel d"><h4>${T("🎨 التصميم", "🎨 Design")}</h4>${L(SKD)}</div><div class="panel"><h4>${T("📊 البيانات", "📊 Data")}</h4>${L(SKA)}</div>`
+        }
+        function renderCases() {
+            const photos = [
+                "img/cases.jpg",
+                "img/data.jpg",
+                "img/design.jpg",
+                "img/waleed.jpg"
+            ];
+
+            $("#cs").innerHTML = CS.map((c, i) => `
+        <div class="case" style="--c:${c[6]}">
+            <img src="${photos[i]}" class="case-photo" alt="${c[2]}">
+            <b>${c[0]}</b>
+            <small>${c[1]}</small>
+            <h3>${T(c[2], c[3])}</h3>
+            <p>${T(c[4], c[5])}</p>
+        </div>
+    `).join("");
+        }
+        function renderAll() { renderDash(); renderGallery(); renderPal(); renderProcess(); renderSkills(); renderCases() }
+
+        /* ===== UI ===== */
+        function counter(el) { const t = +el.dataset.c, s = el.dataset.s || ""; if (el._d) return; el._d = 1; let c = 0; const iv = setInterval(() => { c = Math.min(t, c + Math.ceil(t / 30)); el.textContent = c + s; if (c >= t) clearInterval(iv) }, 40) }
+        const io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; e.target.classList.add("in"); e.target.querySelectorAll("[data-c]").forEach(counter); if (e.target.id === "lab") startLab(); io.unobserve(e.target) }), { threshold: .12 });
+        $$(".rv,#lab,#sk,#process").forEach(e => io.observe(e));
+        addEventListener("scroll", () => {
+            const y = scrollY, h = document.documentElement.scrollHeight - innerHeight; $("#prog").style.width = (y / h * 100) + "%"; $("#top").classList.toggle("show", y > 700);
+            let cur = "home"; $$("section[id]").forEach(s => { if (y >= s.offsetTop - 200) cur = s.id }); $$("nav a").forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + cur))
+        }, { passive: true });
+        $("#top").onclick = () => scrollTo({ top: 0, behavior: "smooth" });
+        $("#burger").onclick = () => { $("#nav").classList.toggle("open"); $("#burger").textContent = $("#nav").classList.contains("open") ? "✕" : "☰" };
+        $$("nav a").forEach(a => a.onclick = () => { $("#nav").classList.remove("open"); $("#burger").textContent = "☰" });
+        $("#form").onsubmit = e => { e.preventDefault(); const b = `${$("#fm").value}\n\n— ${$("#fn").value} (${$("#fe").value})`; location.href = `mailto:${CFG.email}?subject=${encodeURIComponent(T("رسالة من الموقع", "Message from website"))}&body=${encodeURIComponent(b)}` };
+
+        /* ===== INIT ===== */
+        $("#yr").textContent = new Date().getFullYear();
+        genPal();
+        let sv = "ar"; try { sv = localStorage.getItem("lang1") || "ar" } catch (e) { }
+        setLang(sv);
+        addEventListener("load", () => setTimeout(() => $("#loader").classList.add("hide"), 700));
+    </script>
+</body>
+
+</html>
